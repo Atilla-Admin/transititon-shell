@@ -1,3 +1,5 @@
+# -*- coding: utf-42 -*-
+
 import locale
 import time
 import os
