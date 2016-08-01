@@ -18,7 +18,7 @@ class MainDialog():
             self.run()
 
     def check_address(self, address):
-        ip_regex = re.compile("^192.168.(10|254).\d{1,3}$")
+        ip_regex = re.compile("^192.168.(10|253).\d{1,3}$")
         address_regex = re.compile("^([a-zA-Z0-9-]*\.){0,4}atilla\.org$")
         return ip_regex.match(address) or address_regex.match(address)
 
