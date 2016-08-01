@@ -12,7 +12,7 @@ locale.setlocale(locale.LC_ALL, '')
 
 class MainDialog():
     def __init__(self, auto_run=True):
-        self.d = Dialog(dialog="dialog", autowidgetsize=True)
+        self.d = Dialog(dialog="dialog", autowidgetsize=True, DIALOGRC='rc')
         self.d.set_background_title("ATILLA - Transition shell")
         if auto_run:
             self.run()
