@@ -65,7 +65,7 @@ class MainDialog():
         text = ("This application is meant to provide a user-friendly "
                 "interface for SSH bouncing into ATILLA network.\n\n"
                 "Source code available at :\n"
-                "http://gitlab.atilla.org/adminsys/transition-shell")
+                "https://gitlab.atilla.org/adminsys/transition-shell")
         self.d.msgbox(text)
 
     def main_menu(self):
