@@ -13,17 +13,33 @@ Once the user is connected, he can bounce into ATILLA network by entering a spec
 Requirements
 -----
 
-* `OpenSSH Server`
-* `Python3`
-* `Python-pip`
-* `Python-dialog`
+* `openssh-server`
+* `git`
+* `python3`
+* `python3-virtualenv`
+* `python3-pip`
 
-Install
+Automated installation
+-----
+
+If you are lazy, you get a quick setup of the project by running as `root`:
+
+```
+curl -o- -L https://gitlab.atilla.org/adminsys/transition-shell/raw/master/install.sh | bash
+```
+
+... or, if you don’t have `curl` installed on your machine, try:
+
+```
+wget -qO- https://gitlab.atilla.org/adminsys/transition-shell/raw/master/install.sh | bash
+```
+
+Manual installation
 -----
 
 * `git clone git@gitlab.atilla.org:adminsys/transition-shell.git`
 * `cd <path-to-repo>`
 * `virtualenv -p $(which python3) venv`
 * `source venv/bin/activate`
-* `pip install -r requirements.txt`
-* `adduser --shell <path-to-repo>/init.sh`
+* `pip3 install -r requirements.txt`
+* `adduser --shell <path-to-repo>/init.sh --disable-password --system`
